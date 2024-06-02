@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input />
+    <p id="log"></p>
+    <input onkeydown="return checkKey(event.key)" placeholder="Phone, please" type="tel">
+
+    
+    <script>
+        const input = document.querySelector("input");
+        const log = document.getElementById("log");
+
+        input.onkeydown = logKey;
+
+        function logKey(e) {
+
+            
+            log.textContent += ` ${e.code}`;
+            
+            if(e.code === "Digit7"){
+                log.textContent = "7"
+            }
+        /*switch (e.code) {
+            case (e.code === " Digit7"):
+                log.textContent = "7"; {
+            }
+                
+        }
+        */
+        }
+
+        function checkKey(key) {
+        return (key >= '0' && key <= '9') || ['+','(',')','-'].includes(key);
+  }
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+
+</html>

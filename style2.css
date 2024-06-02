@@ -1,0 +1,24 @@
+#key{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+
+#Calculator{
+    max-width: 170px;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+}
+
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 1rem;
+    text-align: left;
+    border: none;
+
+}
